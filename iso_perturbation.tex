@@ -1,0 +1,149 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1 in]{geometry}
+\usepackage{natbib}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{subcaption}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+
+\begin{document}
+\section{Derivation of acoustic metric for Isothermal flow in hydrostatic equilibrium}
+The equation of state characterising isothermal fluid flow
+is given by,
+
+\begin{equation}\label{eqtn_of_state_isothermal}
+p=c_s^2\rho=\frac{\cal R}{\mu}\rho T=\frac{k_B\rho T}{\mu m_H}
+\end{equation}
+
+\noindent
+where $T$ is the bulk ion temperature, $\cal R$ is the universal gas constant, $k_B$ is Boltzmann constant, $m_H$ is mass of the Hydrogen atom and $\mu$ is the mean molecular mass of fully ionized hydrogen.
+
+\subsection{First Integral of Motion}
+The first conserved quantity obtained by integrating continuity equation is same as described in case of polytropic equation, given by
+
+\begin{equation}\label{Sationary-mass-acc-rate}
+\dot{M} = 4\pi \sqrt{-g}H_\theta  \rho v^r = 4\pi H(r) r \rho v^r.
+\end{equation}
+
+Using eqn. (\ref{eqtn_of_state_isothermal}), eqn. (\ref{Euler}) the second conserved quantity is given by
+
+\begin{equation}\label{conserved_isothermal}
+\xi=v_t \rho^{c_s^2}.
+\end{equation}
+
+Using eqn.(\ref{v_t}), one finally obtain 
+
+\begin{equation}
+\xi= \rho^{c_s^2} \sqrt{\frac{\Delta}{B(1-u^2)}}
+\end{equation}
+
+
+\subsection{Linear Perturbation scheme for Isothermal Flow}
+The perturbation scheme will be same as used in polytropic flow and the time dependent accreton variable is again small time dependent linear perurbations added to the time independent stationary values as described in eqn. (\ref{perturbations}).\\
+
+\paragraph{Perturbation of Euler equation or the irrotationality condition} For isothermal flow, the irrotationality condition turns out to be (\citep{bilic99cqg}),
+
+\begin{equation}\label{irrot_iso}
+\partial_\mu(\rho^{c_s^2} v_\nu)-\partial_\nu(\rho^{c_s^2} v_\mu) = 0
+\end{equation}
+
+From irrotationality condition (eqn.(\ref{irrot_iso})) with $\mu=t$ and $\nu=\phi$ and with axial symmetry we have,
+
+\begin{equation}\label{irrotaionality_t_phi_iso}
+\partial_t(h v_\phi)=0,
+\end{equation}
+
+\noindent
+and, for $\mu=r$ and $\nu=\phi$ and the axial symmetry, we have
+
+\begin{equation}\label{irrotationality_r_phi_iso}
+\partial_r(\rho^{c_s^2} v_\phi)=0.
+\end{equation}
+
+\noindent
+So $\rho^{c_s^2} v_\phi$ is a constant of motion and eqn.(\ref{irrotaionality_t_phi_iso}) gives
+
+\begin{equation}\label{del_t_v_phi_iso}
+\partial_t v_\phi=-\frac{v_\phi c_s^2}{\rho}\partial_t \rho.
+\end{equation}
+which has exactly the same form as eqn. (\ref{del_t_v_phi}), although in case of isothermal flow, $c_s$ is a constant whereas it was a radial fuction in case of adiabatic flow. As eqn. (\ref{del_t_v_up_phi}) to eqn. (\ref{eta_1_eta_2_and_Lambda}) are derived from eqn. (\ref{del_t_v_phi}), and not dependent on the geometry on the disc, rather on the background Kerr metric components, these equations will remain same for isothermal flow.\\
+
+\paragraph{Perturbation of continuity equation} In case of isothermal flow in thin disc with vertical equilibribium, i.e, disc with height function given by NT, we have 
+\begin{equation}
+H(r) = \left(\frac{p}{\rho}\right)^{\frac{1}{2}} f(r) = c_s^2 f(r) = F(r)
+\end{equation}
+where $F(r)$ is purely a fncton of radial distance as sound speed $c_s$ is a constant in case of isothermal flow. Henceforth for isothermal case
+\begin{equation}
+H_{\theta 1} (r) = \frac{H_1 (r)}{r} = 0
+\end{equation}
+Thus in the case of isothermal flow the perturbed mass accretion rate will have the form
+
+\begin{equation}\label{Psi1_iso}
+\Psi_1 = \sqrt{-g}[\rho_1 v_0^r H_{\theta 0}+\rho_0 v^r_1H_{\theta 0}]
+\end{equation}
+instead of eqn. (\ref{Psi1}), which represented this perturbed quantity in case of adiabatic flow in hydrostatic equilibrium.\\
+Using the definition of $\Psi$ and $\Psi_1$ from eqn. (\ref{Psi}) and eqn. (\ref{Psi1_iso}) in eqn. (\ref{conserve}),one yields
+\begin{equation}\label{del_r_psi_1_iso}
+-\dfrac{\partial_r\Psi_1}{\Psi_0} = \dfrac{\eta_2}{v_0^r}\partial_t v^r_1+\dfrac{v_0^t}{v_0^r \rho_0 }\left[ 1 +\frac{\eta_1 \rho_0}{v_0^t}\right]\partial_t \rho_1,
+\end{equation}
+\noindent
+and taking time derivative of eqn. (\ref{Psi1_iso}), one yields
+\begin{equation}\label{del_t_psi_1_iso}
+\dfrac{\partial_t\Psi_1}{\Psi_0} = \dfrac{1}{v_0^r}\partial_t v^r_1+ \dfrac{\partial_t \rho_1}{\rho_0}.
+\end{equation}
+
+instead of eqn. (\ref{del_r_psi_1}) and eqn. (\ref{del_t_psi_1}).\\
+We see that eqn. (\ref{del_r_psi_1_iso}) and eqn. (\ref{del_t_psi_1_iso}) are basically eqn. (\ref{del_r_psi_1}) and eqn. (\ref{del_t_psi_1}) with $\beta = 0$. The reason for this is that there is no contribution of the first order perturbation of height function in the perturbation of mass accretion rate in eqn. (\ref{Psi1_iso}) as was the case in eqn. (\ref{Psi1}).\\
+Thus eqn. (\ref{del_t_rho_1_and_v_1}) and eqn. (\ref{Lambda_tilde}) will be applicable for isothermal flow with $\beta = 0$.\\
+Now putting $\mu = t$ and $\nu = r$ in the irrotatonality condition for isothermal flow, i.e, eqn. (\ref{irrot_iso}),it is linearly perturbed and time derivative is taken. This yields
+
+\begin{equation}\label{w_mass_2_iso}
+\partial_t\left(\rho_0^{c_s^2} g_{rr}\partial_t v^r_1 \right)+\partial_t\left( \frac{\rho_0^{c_s^2}g_{rr}c_{s0}^2 v^r_0}{\rho_0}\partial_t \rho_1\right)-\partial_r\left( \rho_0^{c_s^2}\partial_t v_{t1}\right)-\partial_r\left( \frac{\rho_0^{c_s^2} v_{t0}c_{s0}^2}{\rho_0}\partial_t \rho_1\right)=0.
+\end{equation} 
+ which exactly resembles eqtn. (\ref{w_mass_2}), if $h_0$ in the aforementioned equation for adiabatic flow is replaced by $\rho_0^{c_s^2}$ for the isothermal case here. Now using eqtn. (\ref{del_t_pert_v_lower_t}) in eqtn. (\ref{w_mass_2_iso}), and deviding the equation by $\rho_0^{c_s^2}$  one yields eqtn. (\ref{w_mass_3}) again. Thus using $\partial_t v^r_1$ and $\partial_t \rho_1$ in eqn.(\ref{w_mass_3}) using eqn.(\ref{del_t_rho_1_and_v_1}) with $\beta = 0$ one obtains, 
+ 
+ \begin{eqnarray}\label{w_mass_final_iso}
+ \partial_t\left[ k(r)\left(-g^{tt}+(v^t_0)^2(1-\frac{1}{c_s^2}) \right)\partial_t \Psi_1\right]+\partial_t\left[ k(r)\left(v^r_0v_0^t(1-\frac{1}{c_s^2}) \right)\partial_r \Psi_1\right] \nonumber\\
+ +\partial_r \left[ k(r)\left(v^r_0v_0^t(1-\frac{1}{c_s^2}) \right)\partial_t \Psi_1\right]+\partial_r \left[ k(r)\left( g^{rr}+(v^r_0)^2(1-\frac{1}{c_s^2})\right)\partial_r \Psi_1\right]=0
+ \end{eqnarray}
+ 
+ where $k(r)$ is a conformal factor whose exact form is not required for the present analysis. Eqn.(\ref{w_mass_final}) can be written as
+ 
+ \begin{equation}\label{wave-eq}
+ \partial_\mu (f^{\mu\nu}\partial_\nu \Psi_1)=0
+ \end{equation}
+ 
+ \noindent
+ where $f^{\mu\nu}$ is obtained from the symmetric matrix
+ \begin{eqnarray}\label{f_mass}
+ f^{\mu\nu}= k(r) \left[\begin{array}{cc}
+ -g^{tt}+(v^t_0)^2(1-\frac{1 }{c_s^2}) & v^r_0v_0^t(1-\frac{1}{c_s^2})\\
+ v^r_0v_0^t(1-\frac{1}{c_s^2}) & g^{rr}+(v^r_0)^2(1-\frac{1}{c_s^2})
+ \end{array}\right]
+ \end{eqnarray}
+ 
+ \noindent
+ The eqn.(\ref{wave-eq}) describes the propagation of the perturbation $ \Psi_1 $ in $1+1$ dimension effectively. Eqn.(\ref{wave-eq}) has the same form of a massless scalar field in curved spacetime (with metric $ g^{\mu\nu} $) given by,
+ 
+ \begin{equation}\label{scalarfield}
+ \partial_\mu(\sqrt{-g}g^{\mu\nu}\partial_\nu \varphi)=0
+ \end{equation}
+ 
+ \noindent
+ where $ g $ is the determinant of the metric $ g_{\mu\nu} $ and $\varphi$ is the scalar field. Comparing eqn.(\ref{wave-eq}) and eqn.(\ref{scalarfield}), the acoustic spacetime $ G_{\mu\nu} $ metric turns out to be
+ 
+ \begin{equation}\label{Gmunu}
+ G_{\mu\nu} = k_1 (r) \begin{bmatrix}
+ -g^{rr}-(1-\frac{1}{c_{s0}^2})(v^r_0)^2 & v^r_0 v^t_0(1-\frac{1}{c_{s0}^2})  \\
+ v^r_0 v^t_0(1-\frac{1}{c_{s0}^2})  & g^{tt}-(1-\frac{1}{c_{s0}^2}) (v^t_0)^2
+ \end{bmatrix}
+ \end{equation}
+ 
+ \noindent
+ where $ k_1 (r) $ is also a conformal factor arising due to the process of inverting $ G^{\mu\nu} $ in order to yield $ G_{\mu\nu} $. For our present purpose we do not need the exact expression for $ k_1 (r) $.
+ 
+\end{document}
